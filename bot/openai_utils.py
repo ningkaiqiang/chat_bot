@@ -25,8 +25,8 @@ OPENAI_COMPLETION_OPTIONS = {
 }
 
 class AvailableModels:
-    gpt35 = "gpt-35-turbo" if config.openai_api_type == "azure" else "gpt-3.5-turbo"
-    gpt35_16k = "gpt-35-turbo-16k" if config.openai_api_type == "azure" else "gpt-3.5-turbo-16k"
+    gpt35 = "gpt-3.5-turbo"
+    gpt35_16k = "gpt-3.5-turbo-16k"
     gpt4 = "gpt-4"
     text_davinci_003 = "text-davinci-003"
     engineMap = {
