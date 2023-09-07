@@ -2,7 +2,8 @@ import config
 
 import tiktoken
 import openai
-
+import logging
+logger = logging.getLogger(__name__)
 
 # setup openai
 openai.api_key = config.openai_api_key
@@ -32,7 +33,8 @@ class AvailableModels:
     engineMap = {
         gpt35: config.azure_model_development_35_16,
         gpt35_16k: config.azure_model_development_35,
-        gpt4: config.azure_model_development_4
+        gpt4: config.azure_model_development_4,
+        text_davinci_003: text_davinci_003
     }
 
 class ChatGPT:
